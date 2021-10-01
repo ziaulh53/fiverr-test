@@ -1,0 +1,64 @@
+#to-do-list {
+  .to-do-checkbox {
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+    margin: 5px 0;
+    padding: 5px;
+    span {
+      font-size: 15px;
+    }
+    input {
+      margin-right: 10px;
+    }
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+
+  .line-through {
+    span {
+      text-decoration: line-through;
+    }
+  }
+  .primary-btn {
+    background-color: #1890ff;
+    border: none;
+    margin-left: 15px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    min-width: fit-content;
+  }
+  .title {
+    line-height: 30px;
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+    text-transform: uppercase;
+  }
+  .border-bottom {
+    border-top: 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .delete-btn {
+    background-color: #ddd;
+    color: black;
+    transition: all 0.2s;
+    padding: 2px;
+    &:hover {
+      background-color: rgb(201, 200, 200);
+    }
+  }
+
+  .add-input {
+    width: -webkit-fill-available;
+  }
+
+  .empty-text {
+    font-size: 14px;
+  }
+}
